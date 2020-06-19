@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/meditasi"
+        android:title="Meditasi"
+        android:icon="@drawable/ic_meditasi"/>
+
+    <item
+        android:id="@+id/konseling"
+        android:title="Konseling"
+        android:icon="@drawable/ic_konseling"/>
+
+    <item
+        android:id="@+id/layanan"
+        android:title="Layanan"
+        android:icon="@drawable/ic_layanan"/>
+
+    <item
+        android:id="@+id/emergency"
+        android:title="Emergency"
+        android:icon="@drawable/ic_emergency"/>
+</menu>
