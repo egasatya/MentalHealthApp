@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        tools:src="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_item_photo"
+        android:layout_toRightOf="@id/img_item_photo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/psikolog_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/colorText"
+            android:textSize="14sp"
+            tools:text="Psikolog Name" />
+
+        <TextView
+            android:id="@+id/time_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/colorDisabled"
+            android:textSize="12sp"
+            tools:text="Experience Time" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            tools:text="Price" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="28dp"
+        android:layout_alignBottom="@id/img_item_photo"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_rounded_blue"
+        android:fontFamily="@font/poppins"
+        android:text="Chat"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp" />
+
+</RelativeLayout>
