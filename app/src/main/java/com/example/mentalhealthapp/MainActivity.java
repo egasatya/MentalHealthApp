@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id = menuItem.getItemId();
 
+                if (id == R.id.home){
+                    Home fragment = new Home();
+                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.frame_layout, fragment);
+                    fragmentTransaction.commit();
+                }
+
                 if (id == R.id.meditasi){
                     Meditasi fragment = new Meditasi();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
